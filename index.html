@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,8 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" type="text/css" href="libs/animate.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -40,7 +42,7 @@
                 </div>
                 <div class="header__phone">
                     <img class="header__phone-icon" src="images/phone.png" alt="phone">
-                    <a class="header__phone-link" href="tel:+78632797001">8 863 279 70 01</a>
+                    <a class="header__phone-link" href="tel:+79889434040">+7 (988) 943-40-40</a>
                 </div>
                 <button class="header__button button button_to-contacts">Заказать звонок</button>
             </div>
@@ -58,9 +60,6 @@
                         </li>
                         <li class="header__nav-item">
                             <a class="header__nav-link" rel='m_PageScroll2id' href="#design">Проектирование</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" rel='m_PageScroll2id' href="#ttt">Оценка (куда ведет?)</a>
                         </li>
                         <li class="header__nav-item">
                             <a class="header__nav-link" rel='m_PageScroll2id' href="#education">Образование</a>
@@ -87,8 +86,10 @@
         <div class="container front">
             <img src="images/front__left.png" alt="" class="front__img_left">
             <img src="images/front__right.png" alt="" class="front__img_right">
-            <div class="front__img_one bg-img" ></div>
-            <div class="front__title title_h2">Экспертно - аналитическое бюро</div>
+            <div class="front__img_one bg-img" >
+                <div class="front__title title_h2">Экспертно - аналитическое бюро</div>
+                <img class="front__logo" src="images/logo.png" alt="LOGO">
+            </div>
         </div>
     </div>
 
@@ -155,7 +156,7 @@
         <div class="us__img us__img_left bg-img"></div>
         <div class="container us">
             <h2 class="us__title title_h2">О компании</h2>
-            <p class="us__text">Экспертно-аналитическое бюро «Проспект» основано в 2000 году. На сегодняшний день
+            <p class="us__text">Экспертно-аналитическое бюро «Проспект» основано в 2010 году. На сегодняшний день
                 компания имеет большую практику в сфере услуг по проведению экспертиз по оценке. Мы являемся динамично
                 развивающейся компанией. Системный подход к решению поставленных вопросов и креативное мышление
                 позволяют эффективно решать поставленные задачи различной степени сложности. Мы работаем в контакте с
@@ -421,8 +422,12 @@
                 <div class="contacts__text">Компания «Проспект»</div>
                 <div class="contacts__text">344000 г. Ростов-на-Дону,</div>
                 <div class="contacts__text">пер. Гвардейский, 61/10</div>
-                <div class="contacts__text">Тел./факс: 8 (863) 279-70-01</div>
-                <div class="contacts__text contacts__text_with-mb">E-mail: prospekt0220@gmail.com</div>
+                <div class="contacts__text">Тел./факс: 
+                    <a class="contacts__link" href="tel:+79889434040">+7 (988) 943-40-40</a>
+                </div>
+                <div class="contacts__text contacts__text_with-mb">E-mail: 
+                    <a class="contacts__link" href="mailto:prospekt0220@gmail.com">prospekt0220@gmail.com</a>
+                </div>
                 <div class="map">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4724914eb5cacbae35ed793322b3c951e2d014f4d63c03e1da8cf368c9fb8cdd&amp;source=constructor" width="430" height="300" frameborder="0"></iframe>
                 </div>
@@ -432,15 +437,15 @@
                 
                 <form action="" class="form">
                     <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="https://zakazat-resume.ru/">
-                    <input type="hidden" name="admin_email" value="info@zakazat-resume.ru">
+                    <input type="hidden" name="project_name" value="https://prospect-buro.ru/">
+                    <input type="hidden" name="admin_email" value="prospekt0220@gmail.com">
                     <input type="hidden" name="form_subject" value="Заказ с сайта">
                     <!-- END Hidden Required Fields -->
 
                     <h4 class="form__title">Обратная связь</h4>
 
-                    <input type="text" name="name" placeholder="Ведите имя*" required>
-                    <input type="email" name="email" placeholder="Ведите Email*" required>
+                    <input type="text" name="name" placeholder="Введите имя*" required>
+                    <input type="email" name="email" placeholder="Введите Email*" required>
                     <input type="tel" name="phone" placeholder="Введите телефон">
                     <textarea name="text" placeholder="Сообщение"></textarea>
 
@@ -448,20 +453,14 @@
                 </form>
             </div>
 
-
         </div>
     </footer>
 
-
-
-
     <script src="libs/jquery.min.js"></script>
     <script src="libs/jquery.waypoints.min.js"></script>
-    <!-- <script src="libs/slick.min.js"></script> -->
     <script src="script.js"></script>
 
-
-
+    <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 

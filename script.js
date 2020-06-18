@@ -57,7 +57,7 @@ $('document').ready(function () {
     }, 300);
 
 
-    // advs images
+    // advantages images
     new Waypoint({
         element: document.getElementById('advantages'),
         offset: 500,
@@ -73,7 +73,7 @@ $('document').ready(function () {
     });
 
 
-    // exp list
+    // expertise list
     new Waypoint({
         element: document.getElementById('expertise'),
         offset: 600,
@@ -89,7 +89,7 @@ $('document').ready(function () {
     });
 
 
-    // exp list
+    // order list
     new Waypoint({
         element: document.getElementById('order'),
         offset: 300,
@@ -112,6 +112,7 @@ $('document').ready(function () {
     // burger
     $(".hamburger").click(function(){
         $(this).toggleClass("is-active");
+        $('.header').removeClass('header_slim')
         $('#header').toggleClass('header_open');
     });
 
@@ -143,11 +144,5 @@ $('document').ready(function () {
 		});
 		return false;
     });
-    
-
-    // Logo on mobile
-/*     if (window.screen.availWidth < 988) {
-        $('#front .front__logo').attr('src', 'images/logo.png')
-    }; */
 
 });
